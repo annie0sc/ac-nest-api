@@ -1,3 +1,6 @@
+# Annie's attempt at the Nest API Example 
+
+Currently experiencing difiiculty in deploying the app in heroku.
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
