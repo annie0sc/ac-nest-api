@@ -5,6 +5,9 @@
 [Source](https://github.com/annie0sc/ac-nest-api)
 
 [Heroku App](https://ac-nest-api.herokuapp.com/)
+
+[Heroku About page](https://ac-nest-api.herokuapp.com/about)
+
 <!-- <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
