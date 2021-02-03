@@ -2,9 +2,10 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { QuestModule } from './quest/quest.module';
-// import { UserModule } from './user/user.module';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Connection } from 'typeorm';
+// import { User } from './users/user.entity';
 
 @Module({
   // imports: [QuestModule, UsersModule],
@@ -12,17 +13,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   providers: [AppService],
 
   imports: [QuestModule, UsersModule,
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'root',
-      database: 'test',
-      entities: [],
-      synchronize: true,
-    }),
+    TypeOrmModule.forRoot(),
   ],
 
 })
-export class AppModule {}
+export class AppModule {  constructor(private connection: Connection) {}
+}
+
